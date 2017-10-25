@@ -33,5 +33,6 @@ try:
             else:
                 GPIO.output(RGB[x], 1)
         sleep(.25)
-finally:
+except KeyboardInterrupt:
+    print "interrupted"
     GPIO.cleanup()
