@@ -35,4 +35,6 @@ try:
         sleep(.25)
 except KeyboardInterrupt:
     print "interrupted"
+
+finally:
     GPIO.cleanup()
