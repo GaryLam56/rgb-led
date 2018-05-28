@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 from time import sleep
 
 GPIO.setmode(GPIO.BCM)
-RGB = [18, 23, 12]
+RGB = [18, 23, 12] # red, green, then blue. The way you have it setup blue, green, power ,red
 for pin in RGB:
     GPIO.setup(pin, GPIO.OUT)
     GPIO.output(pin, 1)
